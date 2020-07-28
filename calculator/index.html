@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/calculator.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="button-row">
+				<input type="text" class="text-show" value="" placeholder="0" />
+			</div>
+			<div class="button-row">
+				<input type="button" class="button clearAll" value="C" onclick="clearText();" />
+				<input type="button" class="button" value="%" onclick="get(this.value);" />
+				<input type="button" class="button" value="/" onclick="get(this.value);" />
+				<input type="button" class="button delOne" value="Del" onclick="delText();" />
+				<!-- <span class="del-style"></span> -->
+			</div>
+			<div class="button-row">
+				<input type="button" class="button" value="7" onclick="get(this.value);" />
+				<input type="button" class="button" value="8" onclick="get(this.value);" />
+				<input type="button" class="button" value="9" onclick="get(this.value);" />
+				<input type="button" class="button" value="+" onclick="get(this.value);" />
+			</div>
+			<div class="button-row">
+				<input type="button" class="button" value="4" onclick="get(this.value);" />
+				<input type="button" class="button" value="5" onclick="get(this.value);" />
+				<input type="button" class="button" value="6" onclick="get(this.value);" />
+				<input type="button" class="button" value="-" onclick="get(this.value);" />
+			</div>
+			<div class="button-row">
+				<input type="button" class="button" value="1" onclick="get(this.value);" />
+				<input type="button" class="button" value="2" onclick="get(this.value);" />
+				<input type="button" class="button" value="3" onclick="get(this.value);" />
+				<input type="button" class="button" value="*" onclick="get(this.value);" />
+			</div>
+			<div class="button-row">
+				<input type="button" class="button" value="0" onclick="get(this.value);" />
+				<input type="button" class="button" value="." onclick="get(this.value);" />
+				<input type="button" class="result" value="=" onclick="calculate();" />
+			</div>
+		</div>
+
+		<script src="js/calculator.js"></script>
+	</body>
+</html>
